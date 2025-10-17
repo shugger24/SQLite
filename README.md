@@ -1,40 +1,27 @@
-README – SQL Script Description
+# SQLite Users & Category Script
 
-This script creates and manages two related tables: users and category.
-It is written for SQLite.
+## Overview
+SQL script for creating and managing two related tables in **SQLite**:  
+`users` and `category`.
 
-1. Structure
+## Structure
+- Drops existing tables if they exist.  
+- Creates `category` (stores roles like admin, developer, manager).  
+- Creates `users` (stores user data with a foreign key to `category`).  
 
-Cleanup: Drops existing users and category tables if they exist.
+## Sample Data
+- Inserts example categories and users.  
+- Links users to categories via `category_id`.
 
-Table creation:
+## Queries
+- Selects users and categories with aliases.  
+- Filters users by ID.  
+- Sorts users alphabetically (ASC/DESC).  
 
-category: Stores categories (e.g., admin, developer, manager).
+## Updates & Joins
+- Updates user password and email by ID.  
+- Demonstrates `INNER JOIN` and `LEFT JOIN`.  
+- Simulates `RIGHT JOIN` via reversed `LEFT JOIN`.
 
-users: Stores user data with a foreign key (category_id) referencing category.
-
-2. Sample Data
-
-Inserts three categories and several users.
-
-Users are linked to their respective categories.
-
-3. Queries
-
-Selects specific columns with aliases.
-
-Selects a user by ID.
-
-Sorts users alphabetically (ascending or descending).
-
-4. Data Update
-
-Example UPDATE: changes a user’s password and email based on their ID.
-
-5. Joins
-
-INNER JOIN: Returns users with valid categories.
-
-LEFT JOIN: Returns all users, even those without a category.
-
-RIGHT JOIN: Not directly supported; simulated using reversed LEFT JOIN.
+## Notes
+For demonstration and learning purposes only.

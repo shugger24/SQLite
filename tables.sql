@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS category;
 -- Table: category (1 side of the relationship)
 CREATE TABLE category (
     id INTEGER PRIMARY KEY AUTOINCREMENT,     -- Primary key (unique identifier)
-    name TEXT NOT NULL,                       -- Category name (e.g., admin, developer)
+    name TEXT NOT NULL,                       -- Category name
     description TEXT                          -- Optional description
 );
 

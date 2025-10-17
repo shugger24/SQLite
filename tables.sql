@@ -41,6 +41,9 @@ INSERT INTO users (username, password, email, category_id) VALUES
     ('mario', 'geheim', 'tom@gmail.com', 1),
     ('max', '1234', 'max@gmail.com', 3),
     ('oliver', 'text', 'oliver@gmail.com', 3);
+    ('tim', 'geheim', 'tim@gmail.com', 1),
+    ('hannes', '1234', 'hannes@gmail.com', 3),
+    ('max', 'text', 'max@gmail.com', 3);
 
 -- ==========================================
 -- Select queries
